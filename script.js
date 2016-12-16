@@ -12,11 +12,47 @@ var log = function(){
     ].join("<br>")
   );
 }
-log();
-$("#container").click(function(event){
-  sectionId++;
+// log();
+// $("#container").click(function(event){
+//   sectionId++;
+//   window.setInterval(log, 1);
+//   $("#container").animate({
+//       scrollTop: $(sections[sectionId]).position().top
+//   }, 200);
+// });
+$("#button1").click(function(event){
   window.setInterval(log, 1);
   $("#container").animate({
-      scrollTop: $(sections[sectionId]).position().top
+      scrollTop: $("#s1").position().top
+  }, 200);
+});
+$("#button2").click(function(event){
+  window.setInterval(log, 1);
+  $("#container").animate({
+      scrollTop: $("#s2").position().top
+  }, 200);
+});
+$("#button3").click(function(event){
+  window.setInterval(log, 1);
+  $("#container").animate({
+      scrollTop: $("#s3").position().top
+  }, 200);
+});
+$("#button4").click(function(event){
+  window.setInterval(log, 1);
+  $("#container").animate({
+      scrollTop: $("#s4").position().top
+  }, 200);
+});
+$("#button5").click(function(event){
+  window.setInterval(log, 1);
+  $("#container").animate({
+      scrollTop: $("#s5").position().top
+  }, 200);
+});
+$("#button6").click(function(event){
+  window.setInterval(log, 1);
+  $("#container").animate({
+      scrollTop: $("#s6").position().top
   }, 200);
 });
