@@ -31,9 +31,9 @@ section {
   font-family: monospace;
 }
 
-.r { background-color: #F66; }
-.o { background-color: #FC2; }
+.r { background-color: #F88; }
+.o { background-color: #FB5; }
 .y { background-color: #FF6; }
-.g { background-color: lightgreen; }
-.b { background-color: lightblue; }
-.v { background-color: violet; }
+.g { background-color: #AFA; }
+.b { background-color: #AEF; }
+.v { background-color: #EAF; }
