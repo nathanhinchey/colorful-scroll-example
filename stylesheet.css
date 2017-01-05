@@ -5,6 +5,10 @@ body, html, #container {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 section {
   height: 100%;
   font-size: 300%;
