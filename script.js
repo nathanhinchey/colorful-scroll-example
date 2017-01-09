@@ -20,16 +20,11 @@ var scrollTo = function(sectionNumber){
   }, 200 + 100 * Math.abs(currentSection - sectionNumber));
   currentSection = sectionNumber;
 
-  if (currentSection < 1){
-    document.getElementById("previous").setAttribute("disabled", "disabled")
-  }
-  else {
-    document.getElementById("previous").removeAttribute("disabled")
-  }
-  if (currentSection >= sectionCount - 1){
-    document.getElementById("next").setAttribute("disabled", "disabled")
-  }
-  else {
-    document.getElementById("next").removeAttribute("disabled")
-  }
+  // hide irrelevant scroll buttons
+  var $previous = $("#previous");
+  var $next = $("#next")
+  if (currentSection < 1){ $previous.addClass('hidden'); }
+  else { $previous.removeClass('hidden'); }
+  if (currentSection >= sectionCount - 1){$next.addClass('hidden');}
+  else { $next.removeClass('hidden'); }
 }
