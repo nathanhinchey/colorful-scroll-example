@@ -35,6 +35,21 @@ section {
   font-family: monospace;
 }
 
+.scrollbutton {
+  position: fixed;
+  left: 50%;
+  height: 20px;
+  background-color: #EEE;
+}
+
+#previous {
+  top: 0;
+}
+
+#next {
+  bottom: 0;
+}
+
 .r { background-color: #F88; }
 .o { background-color: #FB5; }
 .y { background-color: #FF6; }
